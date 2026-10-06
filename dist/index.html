@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#151a1e">
+  <meta name="description" content="Selecione uma tag para localizar fios e bornes no seu painel elétrico. Layout baseado nas fotos, com conexões confirmadas e bornes do G9SE-201.">
+  <title>Painel — Mapa de fios</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <a class="brand" href="./" aria-label="Mapa de fios, início"><span class="brand-symbol" aria-hidden="true">↳</span><span><b>Mapa de fios</b><small>PAINEL DE COMANDO</small></span></a>
+    <div class="header-meta"><span class="status-dot"></span>Conexões documentadas<span class="header-divider"></span><span id="total-count">42 tags · 125 etiquetas</span></div>
+    <button id="export" class="button subtle" title="Baixar as tags e as conexões em CSV"><span aria-hidden="true">↓</span><span class="desktop-text">Exportar</span></button>
+  </header>
+  <main class="workspace">
+    <section class="stage" aria-label="Visualização do painel">
+      <div class="stage-toolbar">
+        <div class="view-switch" role="group" aria-label="Modo de visualização"><button class="active" id="view-diagram" aria-pressed="true">Painel</button><button id="view-photo" aria-pressed="false">Foto original</button></div>
+        <button id="g9se-open" class="button io-button"><span class="io-dot"></span>G9SE · I/O</button>
+      </div>
+      <div id="map-viewport" class="map-viewport">
+        <svg id="panel-map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 1450" role="img" aria-labelledby="map-title map-description"><title id="map-title">Mapa interativo do painel elétrico</title><desc id="map-description">Disjuntores e módulos em cima, três contatores na região central e borneira embaixo. Escolha uma tag para destacar os fios e suas conexões.</desc></svg>
+        <div class="canvas-hint" id="canvas-hint">Arraste para mover · role para ampliar</div>
+        <div class="zoom-tools" role="group" aria-label="Controles de ampliação"><button id="zoom-in" aria-label="Ampliar" title="Ampliar">+</button><button id="zoom-out" aria-label="Reduzir" title="Reduzir">−</button><span class="tool-divider"></span><button id="zoom-fit" aria-label="Mostrar painel inteiro" title="Mostrar painel inteiro">⤢</button><button id="zoom-selection" aria-label="Enquadrar conexões selecionadas" title="Enquadrar seleção">◎</button></div>
+        <div id="active-wire" class="active-wire"><span class="highlight-dot"></span><b>U1</b><span>selecionado</span></div>
+      </div>
+      <div id="photo-view" class="photo-view" hidden><img src="assets/painel.jpg" alt="Foto original do painel com os disjuntores e módulos superiores, três contatores e borneira inferior"><div class="photo-caption">Vista interna · foto original fornecida por você</div></div>
+      <div class="stage-footer"><span class="diagram-note">Traçados esquemáticos · componentes na posição da foto</span><label class="small-toggle"><input id="show-all" type="checkbox"><span>Todos os fios</span></label></div>
+    </section>
+    <aside class="inspector" id="inspector" aria-label="Tags e conexões">
+      <button class="drawer-handle" id="drawer-handle" aria-expanded="false"><span class="handle-line"></span><span class="drawer-title">Tags e conexões <b id="drawer-tag">U1</b></span><span class="drawer-chevron">⌃</span></button>
+      <div class="inspector-content">
+        <div class="inspector-kicker">LOCALIZAR UM FIO</div>
+        <div class="search-box"><span aria-hidden="true">⌕</span><input id="tag-search" type="search" placeholder="Buscar tag, ex.: W018" aria-label="Buscar tag" autocomplete="off" spellcheck="false"><kbd>/</kbd></div>
+        <div id="search-results" class="search-results" hidden></div>
+        <div class="selection-header"><div><div id="selection-group" class="selection-group">Potência</div><h1 id="selection-title">U1</h1></div><span class="quantity" id="selection-quantity">2 etiquetas</span></div>
+        <div class="selection-tools"><label class="small-toggle"><input type="checkbox" id="include-related" checked><span>Conexões associadas</span></label><button id="clear-selection" class="text-button">Limpar</button></div>
+        <div id="connection-detail" class="connection-detail" aria-live="polite"></div>
+        <details class="tag-catalog" open><summary><span>Todas as tags</span><span id="catalog-count">42</span></summary><div class="category-filters" role="group" aria-label="Filtrar tags"><button data-category="all" class="active">Todas</button><button data-category="Comando">W</button><button data-category="Potência">Potência</button><button data-category="Alimentação CC">CC</button></div><div id="tag-grid" class="tag-grid"></div><button id="untagged" class="untagged-button"><span class="untagged-line"></span>Interligações sem tag <span>↗</span></button></details>
+        <div class="inspector-footnote"><span class="tiny-square"></span>Azul = 0VCC · marrom = 24VCC<br><span>Quantidades mínimas identificadas ou confirmadas.</span></div>
+      </div>
+    </aside>
+  </main>
+  <dialog id="g9se-dialog" class="io-dialog">
+    <div class="dialog-header"><div><span class="inspector-kicker">OMRON · RELÉ DE SEGURANÇA</span><h2>G9SE-201</h2><p>Bornes e tags do seu painel</p></div><button id="g9se-close" class="dialog-close" aria-label="Fechar detalhes do G9SE">×</button></div>
+    <div class="io-note"><span class="status-dot"></span>Tags nos 14 bornes confirmadas por você</div>
+    <div class="io-table-wrap"><table class="io-table"><thead><tr><th>Borne</th><th>Função</th><th>Tag</th></tr></thead><tbody id="io-table-body"></tbody></table></div>
+    <div class="dialog-footer"><a id="g9se-source" href="https://www.ia.omron.com/data_pdf/cat/g9se_j198-e1_4_7_csm1040781.pdf" target="_blank" rel="noopener noreferrer">Catálogo oficial da Omron ↗</a><span>Funções: fabricante · ligações: seu painel</span></div>
+  </dialog>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <noscript>Ative o JavaScript para selecionar as tags e visualizar suas conexões.</noscript>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

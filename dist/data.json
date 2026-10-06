@@ -1,0 +1,422 @@
+{
+  "tags": [
+    {
+      "tag": "R1",
+      "qty": 3,
+      "group": "Potência",
+      "points": "Borneira; entrada esquerda de D1; entrada esquerda de D3",
+      "note": "Derivações na canaleta não rastreáveis.",
+      "photos": "02–06 + confirmação"
+    },
+    {
+      "tag": "S1",
+      "qty": 3,
+      "group": "Potência",
+      "points": "Borneira; entrada direita de D1; entrada direita de D3",
+      "note": "Na entrada direita de D3, a etiqueta R1 foi colocada por engano. Identificação correta: S1, confirmada pelo usuário. A quantidade considera essa correção.",
+      "photos": "02–06 + confirmação"
+    },
+    {
+      "tag": "T1",
+      "qty": 1,
+      "group": "Potência",
+      "points": "Borneira",
+      "note": "Outra ponta não identificada.",
+      "photos": "06"
+    },
+    {
+      "tag": "R2",
+      "qty": 3,
+      "group": "Potência",
+      "points": "Saída esquerda de D1; C1:1L1; fonte:L",
+      "note": "Há dois fios no terminal de saída de D1; uma etiqueta legível nesse terminal. R3 faz jumper diretamente de C1:1L1 (borne de R2) para C2:5L3, conforme usuário.",
+      "photos": "02–05, 09 + confirmação de jumper"
+    },
+    {
+      "tag": "S2",
+      "qty": 3,
+      "group": "Potência",
+      "points": "Saída direita de D1; C1:3L2; fonte:N",
+      "note": "S2 em C1:3L2 confirmado pelo usuário. Há dois fios na saída de D1; uma etiqueta legível nesse terminal. S3 faz jumper diretamente de C1:3L2 (borne de S2) para C2:3L2, conforme usuário.",
+      "photos": "02–05, 09 + confirmação + confirmação de jumper"
+    },
+    {
+      "tag": "T2",
+      "qty": 2,
+      "group": "Potência",
+      "points": "C1:5L3; ponta solta próxima ao disjuntor WEG",
+      "note": "Não foi identificada conexão dessa ponta ao disjuntor. T3 faz jumper diretamente de C1:5L3 (borne de T2) para C2:1L1, conforme usuário.",
+      "photos": "02–05 + confirmação de jumper"
+    },
+    {
+      "tag": "R3",
+      "qty": 1,
+      "group": "Potência",
+      "points": "C2:5L3 ↔ C1:1L1 (borne de R2)",
+      "note": "Jumper direto no borne de R2 em C1, confirmado pelo usuário. A etiqueta da segunda ponta não estava legível na foto.",
+      "photos": "03–05 + confirmação de conexão"
+    },
+    {
+      "tag": "S3",
+      "qty": 1,
+      "group": "Potência",
+      "points": "C2:3L2 ↔ C1:3L2 (borne de S2)",
+      "note": "Jumper direto no borne de S2 em C1, confirmado pelo usuário. A etiqueta da segunda ponta não estava legível na foto.",
+      "photos": "03–05 + confirmação de conexão"
+    },
+    {
+      "tag": "T3",
+      "qty": 1,
+      "group": "Potência",
+      "points": "C2:1L1 ↔ C1:5L3 (borne de T2)",
+      "note": "Jumper direto no borne de T2 em C1, confirmado pelo usuário. A etiqueta da segunda ponta não estava legível na foto.",
+      "photos": "03–05 + confirmação de conexão"
+    },
+    {
+      "tag": "R5",
+      "qty": 2,
+      "group": "Potência",
+      "points": "Saída esquerda de D3 ↔ TS:1",
+      "note": "",
+      "photos": "02–04"
+    },
+    {
+      "tag": "S5",
+      "qty": 2,
+      "group": "Potência",
+      "points": "Saída direita de D3 ↔ TS:5",
+      "note": "",
+      "photos": "02–04"
+    },
+    {
+      "tag": "R6",
+      "qty": 2,
+      "group": "Potência",
+      "points": "TS:3 ↔ C3:1L1",
+      "note": "",
+      "photos": "03–05"
+    },
+    {
+      "tag": "S6",
+      "qty": 2,
+      "group": "Potência",
+      "points": "TS:6 ↔ C3:3L2",
+      "note": "T6 faz jumper diretamente de C3:3L2 (borne de S6) para C3:5L3, conforme usuário.",
+      "photos": "03–05 + confirmação de jumper"
+    },
+    {
+      "tag": "T6",
+      "qty": 1,
+      "group": "Potência",
+      "points": "C3:5L3 ↔ C3:3L2 (borne de S6)",
+      "note": "Jumper direto entre os bornes de T6 e S6 do próprio C3, confirmado pelo usuário. A etiqueta da segunda ponta não estava legível na foto.",
+      "photos": "03–05 + confirmação de conexão"
+    },
+    {
+      "tag": "U1",
+      "qty": 2,
+      "group": "Potência",
+      "points": "C3:2T1 ↔ borne U1 do conjunto separado",
+      "note": "As saídas 2T1 de C1, C2 e C3 são interligadas por fios sem tag. Somente o fio de C3:2T1 até o borne U1 possui a tag U1, conforme usuário.",
+      "photos": "07–08 + confirmação do usuário"
+    },
+    {
+      "tag": "V1",
+      "qty": 2,
+      "group": "Potência",
+      "points": "C3:4T2 ↔ borne V1 do conjunto separado",
+      "note": "As saídas 4T2 de C1, C2 e C3 são interligadas por fios sem tag. Somente o fio de C3:4T2 até o borne V1 possui a tag V1, conforme usuário.",
+      "photos": "07–08 + confirmação do usuário"
+    },
+    {
+      "tag": "W1",
+      "qty": 2,
+      "group": "Potência",
+      "points": "C3:6T3 ↔ borne W1 do conjunto separado",
+      "note": "As saídas 6T3 de C1, C2 e C3 são interligadas por fios sem tag. Somente o fio de C3:6T3 até o borne W1 possui a tag W1, conforme usuário.",
+      "photos": "07–08 + confirmação do usuário"
+    },
+    {
+      "tag": "W003",
+      "qty": 4,
+      "group": "Comando",
+      "points": "RS:T11 ↔ borneira ↔ botão de dois contatos NC: contato esquerdo, terminal 1",
+      "note": "Borne do G9SE confirmado pelo usuário: T11.",
+      "photos": "06, 11, 16 + confirmação G9SE"
+    },
+    {
+      "tag": "W004",
+      "qty": 4,
+      "group": "Comando",
+      "points": "RS:T21 ↔ borneira ↔ botão de dois contatos NC: contato direito, terminal 1",
+      "note": "Borne do G9SE confirmado pelo usuário: T21.",
+      "photos": "06, 11, 16 + confirmação G9SE"
+    },
+    {
+      "tag": "W005",
+      "qty": 4,
+      "group": "Comando",
+      "points": "RS:T12 ↔ borneira ↔ botão de dois contatos NC: contato esquerdo, terminal 2",
+      "note": "Borne do G9SE confirmado pelo usuário: T12.",
+      "photos": "06, 13, 16 + confirmação G9SE"
+    },
+    {
+      "tag": "W006",
+      "qty": 4,
+      "group": "Comando",
+      "points": "RS:T22 ↔ borneira ↔ botão de dois contatos NC: contato direito, terminal 2",
+      "note": "Borne do G9SE confirmado pelo usuário: T22.",
+      "photos": "06, 13, 16 + confirmação G9SE"
+    },
+    {
+      "tag": "W007",
+      "qty": 2,
+      "group": "Comando",
+      "points": "RS:24 ↔ borneira",
+      "note": "Borne do G9SE confirmado pelo usuário: 24; saída inferior da borneira sem fio.",
+      "photos": "06, 13 + confirmação G9SE"
+    },
+    {
+      "tag": "W008",
+      "qty": 2,
+      "group": "Comando",
+      "points": "Borneira ↔ C1:13",
+      "note": "",
+      "photos": "05–06"
+    },
+    {
+      "tag": "W009",
+      "qty": 3,
+      "group": "Comando",
+      "points": "C1:14; borneira; TS:19",
+      "note": "C1:14 possui dois fios em ponteira dupla; apenas uma etiqueta legível nesse terminal. Quantidade mínima visível: 3.",
+      "photos": "03, 06–07"
+    },
+    {
+      "tag": "W010",
+      "qty": 2,
+      "group": "Comando",
+      "points": "TS:20 ↔ C3:71",
+      "note": "",
+      "photos": "03, 05"
+    },
+    {
+      "tag": "W011",
+      "qty": 2,
+      "group": "Comando",
+      "points": "C3:72 ↔ borneira",
+      "note": "",
+      "photos": "06–08"
+    },
+    {
+      "tag": "W012",
+      "qty": 2,
+      "group": "Comando",
+      "points": "TS:15 ↔ C1:53",
+      "note": "",
+      "photos": "03, 05"
+    },
+    {
+      "tag": "W013",
+      "qty": 2,
+      "group": "Comando",
+      "points": "C1:54 ↔ TS:16",
+      "note": "",
+      "photos": "03, 07"
+    },
+    {
+      "tag": "W014",
+      "qty": 2,
+      "group": "Comando",
+      "points": "TS:18 ↔ C1:61",
+      "note": "",
+      "photos": "03, 05"
+    },
+    {
+      "tag": "W015",
+      "qty": 2,
+      "group": "Comando",
+      "points": "C1:62 ↔ C3:A1",
+      "note": "",
+      "photos": "05, 07"
+    },
+    {
+      "tag": "W016",
+      "qty": 4,
+      "group": "Comando",
+      "points": "RS:T31 ↔ borneira ↔ um terminal do botão W016/W017",
+      "note": "Tags do botão confirmadas pelo usuário; número do borne do botão encoberto; borne do G9SE confirmado pelo usuário: T31.",
+      "photos": "06, 11, 14–15 + confirmação + confirmação G9SE"
+    },
+    {
+      "tag": "W017",
+      "qty": 4,
+      "group": "Comando",
+      "points": "TS:21 ↔ borneira ↔ outro terminal do botão W016/W017",
+      "note": "Tags do botão confirmadas pelo usuário; número do borne do botão encoberto.",
+      "photos": "03, 06, 14–15 + confirmação"
+    },
+    {
+      "tag": "W018",
+      "qty": 2,
+      "group": "Comando",
+      "points": "RS:T32 ↔ TS:22",
+      "note": "Tag em RS da foto 104255 confirmada pelo usuário; borne do G9SE confirmado pelo usuário: T32.",
+      "photos": "03, 13 + confirmação + confirmação G9SE"
+    },
+    {
+      "tag": "W020",
+      "qty": 2,
+      "group": "Comando",
+      "points": "RS:X1 ↔ RA:A1",
+      "note": "Borne do G9SE confirmado pelo usuário: X1.",
+      "photos": "02, 04, 13 + confirmação G9SE"
+    },
+    {
+      "tag": "W021",
+      "qty": 4,
+      "group": "Comando",
+      "points": "RA:24 ↔ borneira ↔ sinaleiro direito",
+      "note": "Direita observada pelo lado interno da porta.",
+      "photos": "02, 04, 06, 12, 15"
+    },
+    {
+      "tag": "W022",
+      "qty": 4,
+      "group": "Comando",
+      "points": "RA:22 ↔ borneira ↔ sinaleiro esquerdo",
+      "note": "Esquerda observada pelo lado interno da porta.",
+      "photos": "02, 04, 06, 12, 15"
+    },
+    {
+      "tag": "W036",
+      "qty": 2,
+      "group": "Comando",
+      "points": "Borneira ↔ C2:61",
+      "note": "",
+      "photos": "05–06"
+    },
+    {
+      "tag": "W037",
+      "qty": 2,
+      "group": "Comando",
+      "points": "C2:62 ↔ C1:A1",
+      "note": "",
+      "photos": "05, 07"
+    },
+    {
+      "tag": "W038",
+      "qty": 2,
+      "group": "Comando",
+      "points": "Borneira ↔ C1:71",
+      "note": "",
+      "photos": "05–06"
+    },
+    {
+      "tag": "W039",
+      "qty": 2,
+      "group": "Comando",
+      "points": "C1:72 ↔ C2:A1",
+      "note": "",
+      "photos": "05, 07"
+    },
+    {
+      "tag": "0VCC",
+      "qty": 17,
+      "group": "Alimentação CC",
+      "points": "Fonte (−); TS:14; RS:A2/13/14; RA:A2; C1/C2/C3:A2; borneira; sinaleiros",
+      "note": "Todos os fios azuis são 0VCC. Quantidade de 17 etiquetas confirmada pelo usuário. Localização da etiqueta adicional não especificada.",
+      "photos": "02–04, 06–07, 10–13, 15 + confirmação de quantidade"
+    },
+    {
+      "tag": "24VCC",
+      "qty": 12,
+      "group": "Alimentação CC",
+      "points": "Fonte (+): 1; D2 (entrada e saída): 2; TS:13/17: 2; RS:A1/T33/23: 3; RA:21: 1; borneira: 3",
+      "note": "Todos os fios marrons são 24VCC, conforme usuário. Contagem mínima de marcadores distintos.",
+      "photos": "02–04, 06, 10–13 + confirmação"
+    }
+  ],
+  "g9se": {
+    "model": "G9SE-201",
+    "source": "https://www.ia.omron.com/data_pdf/cat/g9se_j198-e1_4_7_csm1040781.pdf",
+    "terminals": [
+      {
+        "id": "A1",
+        "function": "Alimentação +24 VCC",
+        "tag": "24VCC"
+      },
+      {
+        "id": "A2",
+        "function": "Alimentação 0 VCC",
+        "tag": "0VCC"
+      },
+      {
+        "id": "T11",
+        "function": "Entrada de segurança 1",
+        "tag": "W003"
+      },
+      {
+        "id": "T12",
+        "function": "Entrada de segurança 1",
+        "tag": "W005"
+      },
+      {
+        "id": "T21",
+        "function": "Entrada de segurança 2",
+        "tag": "W004"
+      },
+      {
+        "id": "T22",
+        "function": "Entrada de segurança 2",
+        "tag": "W006"
+      },
+      {
+        "id": "T31",
+        "function": "Reset / realimentação",
+        "tag": "W016"
+      },
+      {
+        "id": "T32",
+        "function": "Reset / realimentação",
+        "tag": "W018"
+      },
+      {
+        "id": "T33",
+        "function": "Reset / realimentação",
+        "tag": "24VCC"
+      },
+      {
+        "id": "X1",
+        "function": "Saída auxiliar PNP",
+        "tag": "W020"
+      },
+      {
+        "id": "13",
+        "function": "Saída de segurança 1 — contato NA 13–14",
+        "tag": "0VCC"
+      },
+      {
+        "id": "14",
+        "function": "Saída de segurança 1 — contato NA 13–14",
+        "tag": "0VCC"
+      },
+      {
+        "id": "23",
+        "function": "Saída de segurança 2 — contato NA 23–24",
+        "tag": "24VCC"
+      },
+      {
+        "id": "24",
+        "function": "Saída de segurança 2 — contato NA 23–24",
+        "tag": "W007"
+      }
+    ],
+    "confirmedByUser": true
+  },
+  "notes": {
+    "outputs": "As saídas correspondentes 2T1, 4T2 e 6T3 dos três contatores são interligadas por fios sem tag. Só os fios entre C3 e os bornes são U1, V1 e W1.",
+    "geometry": "Posições baseadas na foto; os traçados dos fios são esquemáticos.",
+    "updated": "06/10/2026"
+  }
+}
